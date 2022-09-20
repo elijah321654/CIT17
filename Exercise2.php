@@ -1,23 +1,27 @@
 <html>	
 <body>
 <?php 
-    print " Exercise 1 >";
+    <?php 
+        print " Exercise 2 ";
+        $x=10;
+        $y=7;
 
-    $first = "Twinkle, Twinkle little star";
-
-    $text = "Twinkle";
-    $text1 = "\tstar";
-    
-    $text2 = "\tRinkle";
-    $text3 = "dimple";
-
-    echo $first . "<br>" . "<br>";
-    echo $text;
-    echo $text2. "<br>" ;
-    echo $text3;
-    echo $text1. "<br>" . "<br>" ;
-
-
+        $txt2 = "10 + 7 = "; $sum = $x + $y;
+        $txt3 = "10 - 7 = "; $difference = $x - $y;
+        $txt4 = "10 * 7 = "; $product = $x * $y;
+        $txt5 = "10 / 7 = "; $quotient = $x / $y;
+        $txt6 = "10 % 7 = "; $modulo = $x % $y;
+        
+        echo $txt2 ;
+        echo $sum. "<br>";
+        echo $txt3;
+        echo $difference. "<br>";
+        echo $txt4;
+        echo $product. "<br>";
+        echo $txt5;
+        echo $quotient. "<br>";
+        echo $txt6;
+        echo $modulo;
     ?>
 	</body>
 </html>
