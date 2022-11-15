@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Helvetica,Calibri,  sans-serif;  
+  
+ 
+} 
+
+  
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  font color: black;
+}
+ 
+.topbox{
+      font-weight: 500;
+  color:brown;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color:#FFC0CB;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+.container {  
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 70px;  
+    opacity: .9;
+        border-radius: 20px;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color:#FFC0CB;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 12px;  
+  margin: 10px 0 10px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+.registerbtn {  
+  background-color: #007a93;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 2;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="action_page1.php">
+<div class="form"> 
+    <center><h1 style="color:black;"> UNIVERSITY OF THE CORDILLERAS </h1></center>
+</div>   
+<div class="topbox">  
+    <center>  <h2 style="color: black;"> UC STUDENT ID REGISTRATION</h2> </center>  
+</div>  
+  <div class="container">  
+    <label> ID Number: </label>
+        <input type="text" name="ID number" maxlength="11" placeholder="19-1234-234" />
+	<label> Firstname </label>   
+		<input type="text" name="firstname" placeholder= "First Name" size="20" required />   
+	<label> Middlename: </label>   
+		<input type="text" name="middlename" placeholder="Middle Name" size="20" required />   
+	<label> Lastname: </label>    
+		<input type="text" name="lastname" placeholder="Last Name" size="15"required />   
+	<label for="email">Email</label>  
+		<input type="text" placeholder="aadsa***@gmail.com" name="email" required>  
+	<label>   
+	Phone :  
+	</label>  
+		<input type="text" name="phone no." placeholder="09166661341"  hint="+639" size="14"/>   	
+<div>
+	Address :  
+	<textarea cols="80" rows="5" placeholder="Balili, La Trinidad, Benguet" value="address" required></textarea>    
+	<label>   
+	Gender :  
+	</label><br>  
+	<input type="radio" value="Male" name="gender" checked > Male<br>   
+	<input type="radio" value="Female" name="gender"> Female  <br> 
+  <input type="radio" value="Female" name="gender"> Prefer Not to Say   
+</div>  
+
+<div>
+	<label>   
+	Course :  
+	</label>   
+	<select>  
+	<option value="Course">Course</option>  
+	<option value="BSIT">BSIT</option>  
+	<option value="BSCS">BSCS</option>  
+	<option value="BSDA">BSDA</option>
+  <option value="BSDA">BSED</option> 
+  <option value="BSDA">BSCJE</option>   
+	</select>  
+</div>  
+<div>  
+    <label for="psw">Password</label>  
+        <input type="password" placeholder="*********" name="psw" size="8" required> 
+  
+    <label for="psw-repeat">Confirm Password</label>  
+		<input type="password" placeholder="*********" name="psw-repeat" required> 
+
+    <button type="submit" class="registerbtn">Register</button>   
+</form>  
+</body>  
+</html>
